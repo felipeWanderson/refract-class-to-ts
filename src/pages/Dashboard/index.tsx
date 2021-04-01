@@ -19,7 +19,7 @@ const Dashboard: React.FC = () => {
       setFoods(response.data);
     };
     loadFoods();  
-  });
+  }, []);
 
   const toggleModal = () => {
     setModalOpen(!modalOpen);
